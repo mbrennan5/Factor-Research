@@ -1,0 +1,129 @@
+# ================================
+# DATA FILES - IGNORE ALL CSV FILES
+# ================================
+
+# Ignore ALL CSV files everywhere (recursive)
+**/*.csv
+
+# Ignore specific large data files
+data/
+!data/.gitkeep
+!data/**/README.md
+!data/**/.gitkeep
+
+# Keep ONLY sample files and documentation
+!**/sample_*.csv
+!data/**/README.md
+
+# ================================
+# MODEL OUTPUTS AND RESULTS
+# ================================
+
+# Ignore results and outputs
+results/
+outputs/
+models/
+*.pkl
+*.h5
+*.model
+*.joblib
+*.pt
+*.pth
+
+# ================================
+# DEVELOPMENT FILES
+# ================================
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ================================
+# SYSTEM FILES
+# ================================
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ================================
+# IDE AND EDITOR FILES
+# ================================
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ================================
+# ENVIRONMENT FILES
+# ================================
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ================================
+# LOG AND TEMPORARY FILES
+# ================================
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# ================================
+# KEEP FOLDER STRUCTURE
+# ================================
+
+# Keep empty folders by adding .gitkeep files
+!data/
+!data/raw/
+!data/processed/
+!data/factors/
+!data/factors/obtained_features/
+!data/factors/selected_factors/
+!data/factors/final_selected/
